@@ -15,7 +15,7 @@ function Header({ headerType }) {
         return (
             <header className="header">
                 <nav className="header__navigation centered-block">
-                    <Link to="/profile" className="logo" />
+                    <Link to="/" className="logo" />
                     <ul className="header__container">
                         <li><Link to="/signup" className="header__link">Регистрация</Link></li>
                         <li><Link to="/signin" className="header__link header__link_type_active">Войти</Link></li>
@@ -27,7 +27,7 @@ function Header({ headerType }) {
         return (
             <header className="header_custom">
                 <nav className="header__navigation  header_custom__navigation centered-block">
-                    <Link to="/profile" className="logo" />
+                    <Link to="/" className="logo" />
                     <div className="header__content">
                         <ul className="header__nav-links">
                             <li><Link to="/" className="header__link header__link_type_normal header__link_type_hidden ">Главная</Link></li>

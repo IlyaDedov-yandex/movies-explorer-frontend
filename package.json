@@ -14,6 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "npm run build && scp -r ./build/* ilyadedov@62.84.114.97:/home/ilyadedov/movies-explorer-frontend",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

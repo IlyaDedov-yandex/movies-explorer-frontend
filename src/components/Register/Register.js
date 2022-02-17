@@ -34,7 +34,7 @@ class Register extends React.Component {
             <section className="wrapper wrapper_type_long">
                 <div className="login">
                     <div className="login__welcome">
-                        <Link to="/profile" className="logo" />
+                        <Link to="/" className="logo" />
                         <h2 className="login__welcome-title">Добро пожаловать!</h2>
                     </div>
                     <form className="login__form" onSubmit={this.handleSubmit}>
