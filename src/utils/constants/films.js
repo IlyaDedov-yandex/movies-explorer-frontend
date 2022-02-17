@@ -29,18 +29,18 @@ export const films = [
         isLiked: true,
         duration: '1ч 42м',
     },
-    // {
-    //     name: 'Книготорговцы',
-    //     image: require('../../images/movies/movies-card/movies-card_image6.png'),
-    //     isLiked: false,
-    //     duration: '1ч 42м',
-    // },
-    // {
-    //     name: 'Когда я думаю о Германии ночью',
-    //     image: require('../../images/movies/movies-card/movies-card_image7.png'),
-    //     isLiked: false,
-    //     duration: '1ч 42м',
-    // },
+    {
+        name: 'Книготорговцы',
+        image: require('../../images/movies/movies-card/movies-card_image6.png'),
+        isLiked: false,
+        duration: '1ч 42м',
+    },
+    {
+        name: 'Когда я думаю о Германии ночью',
+        image: require('../../images/movies/movies-card/movies-card_image7.png'),
+        isLiked: false,
+        duration: '1ч 42м',
+    },
 ];
 export const savedFilms = [
     {
