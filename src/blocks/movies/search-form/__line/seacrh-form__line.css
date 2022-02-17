@@ -1,0 +1,9 @@
+.search-form__line{
+    border-left: 1px solid #505050;
+    height: 34px;
+}
+@media screen and (max-width: 767px){
+    .search-form__line{
+        display: none;
+    }
+}

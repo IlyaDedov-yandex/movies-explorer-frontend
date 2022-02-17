@@ -1,0 +1,19 @@
+.movies-card__duration{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #8B8B8B;
+    padding-bottom: 30px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+@media screen and (max-width: 767px){
+    .movies-card__duration{
+        padding-bottom: 0;
+    }
+}

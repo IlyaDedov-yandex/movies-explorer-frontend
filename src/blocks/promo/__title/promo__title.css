@@ -1,0 +1,36 @@
+.promo__title{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 640px;
+    font-size: 50px;
+    line-height: 58px;
+    color: #FFFFFF;
+    padding-bottom: 36px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .promo__title{
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        padding-top: 48px;
+        padding-bottom: 22px;
+    }
+}
+@media screen and (max-width: 767px){
+    .promo__title{
+        max-width: 300px;
+        letter-spacing: -0.04em;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        padding-top: 44px;
+        padding-bottom: 24px;
+    }
+}

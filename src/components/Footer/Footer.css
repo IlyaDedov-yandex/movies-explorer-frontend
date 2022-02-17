@@ -1,0 +1,9 @@
+@import url(../../blocks/centered-block/centered-block.css);
+@import url(../../blocks/main-line/main-line.css);
+@import url(../../blocks/footer/footer.css);
+@import url(../../blocks/footer/__container/footer__container.css);
+@import url(../../blocks/footer/__title/footer__title.css);
+@import url(../../blocks/footer/__bottom-part/footer__bottom-part.css);
+@import url(../../blocks/footer/__copyright/footer__copyright.css);
+@import url(../../blocks/footer/__navigation/footer__navigation.css);
+@import url(../../blocks/footer/__link/footer__link.css);

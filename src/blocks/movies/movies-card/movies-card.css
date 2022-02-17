@@ -1,0 +1,13 @@
+.movies-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    background-color: #2F2F2F;
+}
+
+@media screen and (max-width: 767px){
+    .movies-card{
+        flex-direction: column-reverse;
+    }
+}

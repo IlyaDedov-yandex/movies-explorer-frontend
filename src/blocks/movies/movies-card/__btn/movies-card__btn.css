@@ -1,0 +1,8 @@
+.movies-card__btn{
+    width: 14px;
+    height: 12px;
+    cursor: pointer;
+}
+.movies-card__btn:hover{
+    opacity: 0.6;
+}

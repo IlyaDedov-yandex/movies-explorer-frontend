@@ -1,0 +1,17 @@
+.login__caption{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8B8B8B;
+    margin: 0 6px 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px){
+    .login__caption{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

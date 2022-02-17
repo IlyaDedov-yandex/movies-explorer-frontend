@@ -1,0 +1,30 @@
+.profile__welcome-title{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 410px;
+    margin: 74px 0 123px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .profile__welcome-title{
+        margin-top: auto;
+        margin-bottom: 96px;
+    }
+}
+@media screen and (max-width: 767px){
+    .profile__welcome-title{
+        margin-top: auto;
+        margin-bottom: 80px;
+    }
+}

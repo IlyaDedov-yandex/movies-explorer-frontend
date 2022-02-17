@@ -1,0 +1,19 @@
+.header__container{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,min-content);
+    justify-content: end;
+    align-content: center;
+    align-items: center;
+    column-gap: 18px;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+}
+
+@media screen and (max-width: 767px){
+    .header__container{
+        column-gap: 14px;
+    }
+}

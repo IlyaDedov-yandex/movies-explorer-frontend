@@ -1,0 +1,15 @@
+.promo__text-block{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .promo__text-block{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767px){
+    .promo__text-block{
+        align-items: center;
+    }
+}

@@ -1,0 +1,19 @@
+.movies-card-list__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 36px;
+    margin: 0 auto;
+    background-color: #2F2F2F;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.movies-card-list__btn:hover{
+    opacity: 0.85;
+}
+@media screen and (max-width: 767px){
+    .movies-card-list__btn{
+        width: 240px;
+    }
+}

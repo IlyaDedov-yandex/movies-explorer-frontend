@@ -1,0 +1,25 @@
+.about-project__progress-caption{
+    margin: 0;
+    padding-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8B8B8B;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 767px){
+    .about-project__progress-caption{
+        padding-top: 10px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+}

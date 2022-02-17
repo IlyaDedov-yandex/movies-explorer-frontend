@@ -1,0 +1,12 @@
+.footer__bottom-part{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .footer__bottom-part{
+        padding-top: 30px;
+        flex-direction: column-reverse;
+    }
+}

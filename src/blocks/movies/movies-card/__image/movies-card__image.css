@@ -1,0 +1,15 @@
+.movies-card__image{
+    width: 220px;
+    height: 122px;
+    object-fit: cover;
+    padding: 6px 6px 6px 0;
+}
+
+@media screen and (max-width: 767px){
+    .movies-card__image{
+        width: 300px;
+        height: 168px;
+        object-fit:contain;
+        padding: 0;
+    }
+}
