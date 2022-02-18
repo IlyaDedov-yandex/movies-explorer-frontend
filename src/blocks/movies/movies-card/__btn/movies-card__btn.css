@@ -4,6 +4,9 @@
     cursor: pointer;
     border: none;
     background-color: #2F2F2F;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .movies-card__btn:hover{
     opacity: 0.6;
