@@ -46,7 +46,7 @@ class Profile extends React.Component {
                             <label htmlFor="email" className="profile__label">E-mail</label>
                             <input required className="profile__input" name="email" placeholder="E-mail" type="text" onChange={this.handleChange} value={this.state.email} />
                         </div>
-                        <button type="submit" className="profile__btn">Редактировать</button>
+                        <button type="submit" className="profile__btn" aria-label="Редактировать профайл">Редактировать</button>
                         <Link to="/signout" className="profile__link">Выйти из аккаунта</Link>
                     </form>
                 </div>

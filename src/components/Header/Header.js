@@ -30,9 +30,9 @@ function Header({ headerType }) {
                     <Link to="/" className="logo" />
                     <div className="header__content">
                         <ul className="header__nav-links">
-                            <li><Link to="/" className="header__link header__link_type_normal header__link_type_hidden ">Главная</Link></li>
-                            <li><Link to="/movies" className="header__link header__link_type_normal">Фильмы</Link></li>
-                            <li><Link to="/saved-movies" className="header__link header__link_type_normal">Сохранённые фильмы</Link></li>
+                            <li><Link to="/" className="header__link header__link_type_normal header__link_type_hidden textlink-hover-effect">Главная</Link></li>
+                            <li><Link to="/movies" className="header__link header__link_type_normal textlink-hover-effect">Фильмы</Link></li>
+                            <li><Link to="/saved-movies" className="header__link header__link_type_normal textlink-hover-effect">Сохранённые фильмы</Link></li>
                         </ul>
                         <ul className="header__container">
                             <li><Link to="/profile" className="header__link header__link_type_custom">Аккаунт</Link></li>

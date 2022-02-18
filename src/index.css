@@ -2,3 +2,4 @@
 @import url(./blocks/wrapper/wrapper.css);
 @import url(./blocks/wrapper/_type/wrapper_type_long.css);
 @import url(./blocks/wrapper/_type/wrapper_type_medium.css);
+@import url(./blocks/textlink-hover-effect/textlink-hover-effect.css);

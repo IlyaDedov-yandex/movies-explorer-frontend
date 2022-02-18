@@ -7,7 +7,7 @@ class Login extends React.Component {
         this.state = {
             email: '',
             password: '',
-            logoImage: require('../../images/logo/logo.png')
+            logoImage: require('../../images/logo/logo.svg')
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -46,7 +46,7 @@ class Login extends React.Component {
                             <label htmlFor="password" className="login__label">Пароль</label>
                             <input required className="login__input" name="password" placeholder="Пароль" type="password" onChange={this.handleChange} value={this.state.password} />
                         </div>
-                        <button type="submit" className="login__btn">Войти</button>
+                        <button type="submit" className="login__btn" aria-label="Войти">Войти</button>
                     </form>
                     <div className="login__signup">
                         <p className="login__caption">Ещё не зарегистрированы?</p>

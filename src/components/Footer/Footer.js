@@ -9,9 +9,9 @@ function Footer() {
                 <div className="footer__bottom-part">
                     <p className="footer__copyright">&copy; 2022</p>
                     <nav className="footer__navigation">
-                        <li><a className="footer__link" href="https://practicum.yandex.ru" target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
-                        <li><a className="footer__link" href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a></li>
-                        <li><a className="footer__link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a className="footer__link textlink-hover-effect" href="https://practicum.yandex.ru" target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a></li>
+                        <li><a className="footer__link textlink-hover-effect" href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a></li>
+                        <li><a className="footer__link textlink-hover-effect" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                     </nav>
                 </div>
             </div>

@@ -9,7 +9,7 @@ function MoviesCard({ film }) {
                     <h2 className="movies-card__name">{film.name}</h2>
                     <p className="movies-card__duration">{film.duration}</p>
                 </div>
-                <div className={`movies-card__btn ${cardLikeButtonClassName}`}></div>
+                <button className={`movies-card__btn ${cardLikeButtonClassName}`} type="button" aria-label="Поставить лайк"></button>
             </div>
             <img className="movies-card__image" src={film.image} alt={film.name} />
         </li>

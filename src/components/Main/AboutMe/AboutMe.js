@@ -14,8 +14,8 @@ function AboutMe() {
                         <p className="about-me__text">Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена
                             и&nbsp;дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015&nbsp;года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
                         <ul className="about-me__links">
-                            <li><a className="about-me__link" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                            <li><a className="about-me__link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a className="about-me__link textlink-hover-effect" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><a className="about-me__link textlink-hover-effect" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                         </ul>
                     </div>
                     <img className="about-me__avatar" src={avatarImg} alt="Аватар в портфолио" />

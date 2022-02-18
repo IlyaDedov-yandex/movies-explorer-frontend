@@ -12,7 +12,9 @@
     cursor: pointer;
     border-radius: 48px;
 }
-
+.search-form__btn:hover{
+    opacity: 0.85;
+}
 @media screen and (max-width: 767px){
     .search-form__btn{
         margin-right: 0;

@@ -7,7 +7,7 @@ class Register extends React.Component {
             name: '',
             email: '',
             password: '',
-            logoImage: require('../../images/logo/logo.png')
+            logoImage: require('../../images/logo/logo.svg')
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -53,7 +53,7 @@ class Register extends React.Component {
                             <input required className="login__input login__input_type_error" name="password" placeholder="Пароль" type="password" onChange={this.handleChange} value='dfdsfewfew' />
                             <span className="login__input-error">Что-то пошло не так...</span>
                         </div>
-                        <button type="submit" className="login__btn">Зарегистрироваться</button>
+                        <button type="submit" className="login__btn" aria-label="Зарегистрироваться">Зарегистрироваться</button>
                     </form>
                     <div className="login__signup">
                         <p className="login__caption">Уже зарегистрированы?</p>
