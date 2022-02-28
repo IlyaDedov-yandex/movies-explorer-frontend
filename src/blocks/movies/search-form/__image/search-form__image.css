@@ -1,6 +1,10 @@
-.search-form__image{
+.search-form__image{    
     width: 34px;
-    height: 34px;    
+    height: 34px;
+    background-image: url(../../../../images/movies/search-form/_search/search-form_search.svg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 @media screen and (max-width: 767px){
     .search-form__image{
