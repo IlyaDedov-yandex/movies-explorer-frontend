@@ -4,14 +4,19 @@ import './SavedMovies.css';
 import MoviesCardList from "./MoviesCardList/MoviesCardList";
 import SearchForm from "../Movies/SearchForm/SearchForm";
 
-function SavedMovies({ films }) {
+function SavedMovies({ loggedIn, savedMovies, foundedMovies, onDeleteClick, header: Header, footer: Footer, onSearchSavedFilm, isShortSavedInitial, searchStringSavedInitial, onSearchSavedChange, onShortSavedChange }) {
     return (
-        <main className="movies">
-            <div className="movies__wrapper">
-                <SearchForm />
-                <MoviesCardList films={films} />
-            </div>
-        </main >
+        <>
+            <Header loggedIn={loggedIn} />
+            <main className="movies">
+                <div className="movies__wrapper">
+                    <SearchForm onSearchFilm={onSearchSavedFilm} isShortInitial={isShortSavedInitial} searchStringInitial={searchStringSavedInitial} onSearchChange={onSearchSavedChange} onShortChange={onShortSavedChange} />
+                    <MoviesCardList films={(foundedMovies.length > 0) ? foundedMovies : savedMovies} onDeleteClick={onDeleteClick} />
+                </div>
+            </main >
+            <Footer />
+        </>
+        // !(foundedMovies.length > 0) ? foundedMovies :
     )
 }
 

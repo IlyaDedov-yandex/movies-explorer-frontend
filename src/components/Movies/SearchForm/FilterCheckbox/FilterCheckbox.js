@@ -1,33 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './FilterCheckbox.css';
-class FilterCheckbox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isGoing: true,
-        };
+function FilterCheckbox({ handleChange, isShortInitial }) {
 
-        this.handleInputChange = this.handleInputChange.bind(this);
+    function handleInputChange(evt) {
+        const value = evt.target.type === 'checkbox' ? evt.target.checked : evt.target.value;
+        handleChange(value);
     }
 
-    handleInputChange(event) {
-        const { name } = event.target;
-        const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
-
-        this.setState({
-            [name]: value
-        });
-    }
-
-    render() {
-        return (
-            <div className="filter-checkbox">
-                <input className="filter-checkbox__input" type="checkbox" name="isGoing" id="filter-checkbox" checked={this.state.isGoing}
-                    onChange={this.handleInputChange} />
-                <label htmlFor="filter-checkbox" className="filter-checkbox__label"></label>
-                <p className="filter-checkbox__caption">Короткометражки</p>
-            </div>
-        );
-    }
+    return (
+        <div className="filter-checkbox" >
+            <input className="filter-checkbox__input" type="checkbox" name="isGoing" id="filter-checkbox" checked={isShortInitial}
+                onChange={handleInputChange} />
+            <label htmlFor="filter-checkbox" className="filter-checkbox__label"></label>
+            <p className="filter-checkbox__caption">Короткометражки</p>
+        </div>
+    );
 }
 export default FilterCheckbox;

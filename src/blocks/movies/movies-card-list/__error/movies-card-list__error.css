@@ -1,0 +1,18 @@
+.movies-card-list__error{
+    display: flex;
+    margin: 0 auto;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    color: #EE3465;
+    text-align: center;
+}
+@media screen and (max-width: 767px){
+    .movies-card-list__error{
+        font-size: 18px;
+        line-height: 16px;
+    }
+}

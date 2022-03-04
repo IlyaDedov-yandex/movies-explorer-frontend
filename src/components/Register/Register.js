@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from 'react-router-dom';
+import validator from "validator";
 class Register extends React.Component {
     constructor(props) {
         super(props);
@@ -7,17 +8,20 @@ class Register extends React.Component {
             name: '',
             email: '',
             password: '',
-            logoImage: require('../../images/logo/logo.svg')
+            formErrors: { name: '', email: '', password: '' },
+            nameValid: false,
+            emailValid: false,
+            passwordValid: false,
+            formValid: false,
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
 
     }
     handleChange(e) {
-        const { email, value } = e.target;
-        this.setState({
-            [email]: value
-        });
+        const { name, value } = e.target;
+        this.setState({ [name]: value },
+            () => { this.validateField(name, value) });
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -25,9 +29,42 @@ class Register extends React.Component {
         if (!email || !password || !name) {
             return;
         }
-        this.setState({ email: '', password: '' }, () => {
-            this.props.handleLogin(email, password);
+        this.setState({ name: '', email: '', password: '' }, () => {
+            this.props.handleRegister(email, password, name);
         })
+    }
+
+    validateField(fieldName, value) {
+        let fieldValidationErrors = this.state.formErrors;
+        let nameValid = this.state.nameValid;
+        let emailValid = this.state.emailValid;
+        let passwordValid = this.state.passwordValid;
+        switch (fieldName) {
+            case 'name':
+                nameValid = value.match(/[\wа-я\sё-]/gi);
+                fieldValidationErrors.name = nameValid ? '' : 'Имя должно содержить латиницу, кириллицу, тире и пробел';
+                break;
+            case 'email':
+                emailValid = validator.isEmail(value);
+                fieldValidationErrors.email = emailValid ? '' : 'Введите корректный email';
+                break;
+            case 'password':
+                passwordValid = value.length >= 8;
+                fieldValidationErrors.password = passwordValid ? '' : 'Длина пароля > 8 символов';
+                break;
+            default:
+                break;
+        }
+        this.setState({
+            formErrors: fieldValidationErrors,
+            nameValid: nameValid,
+            emailValid: emailValid,
+            passwordValid: passwordValid
+        }, this.validateForm);
+    }
+
+    validateForm() {
+        this.setState({ formValid: this.state.nameValid && this.state.emailValid && this.state.passwordValid });
     }
     render() {
         return (
@@ -40,20 +77,21 @@ class Register extends React.Component {
                     <form className="login__form" onSubmit={this.handleSubmit}>
                         <div className="login__field">
                             <label htmlFor="password" className="login__label">Имя</label>
-                            <input required className="login__input" name="name" placeholder="Имя" type="text" onChange={this.handleChange} value='Виталий' />
-                            <span className="login__input-error"></span>
+                            <input required className={`login__input ${!this.state.nameValid && 'login__input_type_error'}`} name="name" placeholder="Имя" type="text" onChange={this.handleChange} value={this.state.name} />
+                            <span className="login__input-error">{this.state.formErrors.name}</span>
                         </div>
                         <div className="login__field">
                             <label htmlFor="email" className="login__label">E-mail</label>
-                            <input required className="login__input" name="email" placeholder="Email" type="text" onChange={this.handleChange} value='pochta@yandex.ru' />
-                            <span className="login__input-error"></span>
+                            <input required className={`login__input ${!this.state.emailValid && 'login__input_type_error'}`} name="email" placeholder="Email" type="text" onChange={this.handleChange} value={this.state.email} />
+                            <span className="login__input-error">{this.state.formErrors.email}</span>
                         </div>
                         <div className="login__field">
                             <label htmlFor="password" className="login__label">Пароль</label>
-                            <input required className="login__input login__input_type_error" name="password" placeholder="Пароль" type="password" onChange={this.handleChange} value='dfdsfewfew' />
-                            <span className="login__input-error">Что-то пошло не так...</span>
+                            <input required className={`login__input ${!this.state.passwordValid && 'login__input_type_error'}`} name="password" placeholder="Пароль" type="text" onChange={this.handleChange} value={this.state.password} />
+                            <span className="login__input-error">{this.state.formErrors.password}</span>
                         </div>
-                        <button type="submit" className="login__btn" aria-label="Зарегистрироваться">Зарегистрироваться</button>
+                        <span className="login__error">{this.props.registerStatus.message}</span>
+                        <button type="submit" className={`login__btn ${!this.state.formValid && 'login__btn_type_disabled'}`} aria-label="Зарегистрироваться" disabled={!this.state.formValid}>Зарегистрироваться</button>
                     </form>
                     <div className="login__signup">
                         <p className="login__caption">Уже зарегистрированы?</p>
