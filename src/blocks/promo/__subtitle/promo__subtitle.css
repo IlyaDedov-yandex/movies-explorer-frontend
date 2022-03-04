@@ -1,0 +1,26 @@
+.promo__subtitle{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    max-width: 310px;
+    padding-bottom: 146px;
+    margin: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .promo__subtitle{
+        text-align: center;
+        padding-bottom: 92px;
+    }
+}
+@media screen and (max-width: 767px){
+    .promo__subtitle{
+        text-align: center;
+        padding-bottom: 80px;
+        max-width: 260px;
+    }
+}

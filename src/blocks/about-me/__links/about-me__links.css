@@ -1,0 +1,10 @@
+.about-me__links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-column-gap: 20px;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+}

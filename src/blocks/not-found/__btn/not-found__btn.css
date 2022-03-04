@@ -1,0 +1,13 @@
+.not-found__btn{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4285F4;
+    text-decoration: none;
+    cursor: pointer;
+}
+.not-found__btn:hover{
+    opacity: 0.6;
+}

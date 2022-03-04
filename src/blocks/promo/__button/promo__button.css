@@ -1,0 +1,19 @@
+.promo__button{
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    width: 129px;
+    height: 36px;
+    background-color: #073042;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255, 0.6);
+    box-sizing: border-box;
+    border-radius: 3px;
+    color:#FFFFFF;
+}
+.promo__button:hover{
+    opacity: 0.5;
+}

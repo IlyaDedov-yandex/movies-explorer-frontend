@@ -1,0 +1,24 @@
+.login__input{
+    padding: 15px;
+    border: none;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    background-color: #2F2F2F;
+}
+.login__input:focus{
+    outline: none;
+}

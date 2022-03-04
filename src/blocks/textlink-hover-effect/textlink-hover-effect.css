@@ -1,0 +1,7 @@
+.textlink-hover-effect:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #FFFFFF;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}

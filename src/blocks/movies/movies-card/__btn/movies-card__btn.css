@@ -1,0 +1,13 @@
+.movies-card__btn{
+    width: 14px;
+    height: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #2F2F2F;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.movies-card__btn:hover{
+    opacity: 0.6;
+}

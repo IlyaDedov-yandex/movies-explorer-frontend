@@ -1,0 +1,12 @@
+.login__welcome{
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-row-gap: 40px;
+}
+@media screen and (max-width: 767px){
+    .login__welcome{
+        grid-row-gap: 50px;
+        justify-content: center;
+        justify-items: center;
+    }
+}

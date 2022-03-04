@@ -1,0 +1,19 @@
+.header__navigation{    
+    display: flex;
+    justify-content: space-between;
+    background-color: #073042;
+    max-width: 1140px;
+    padding: 18px 70px;
+}
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .header__navigation{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .header__navigation{
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}

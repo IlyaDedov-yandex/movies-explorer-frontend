@@ -1,0 +1,26 @@
+.about-project__progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 36px;
+    background-color: #303030;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 767px){
+    .about-project__progress{
+        font-size: 11px;
+        line-height: 13px;
+    }
+}

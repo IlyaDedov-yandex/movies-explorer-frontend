@@ -1,0 +1,8 @@
+.portfolio__link-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.portfolio__link-container:not(:last-of-type) {    
+    padding-bottom: 19px;
+}

@@ -1,0 +1,8 @@
+.about-project__progress-element_long{
+    width: 80%;
+}
+@media screen and (max-width: 767px){
+    .about-project__progress-element_long{
+        width: 71.6%;
+    }
+}

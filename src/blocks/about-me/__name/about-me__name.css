@@ -1,0 +1,30 @@
+.about-me__name{
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    padding-bottom: 18px;
+}
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .about-me__name{
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .about-me__name{
+        font-size: 30px;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+}

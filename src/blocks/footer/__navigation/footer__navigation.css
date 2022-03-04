@@ -1,0 +1,17 @@
+.footer__navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-column-gap: 20px;
+    line-height: 0;
+}
+@media screen and (max-width: 767px){
+    .footer__navigation{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       grid-row-gap: 12px;
+    }
+}

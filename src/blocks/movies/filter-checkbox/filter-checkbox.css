@@ -1,0 +1,22 @@
+.filter-checkbox{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-column-gap: 15px;
+    align-content: center;
+    padding-left: 29px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .filter-checkbox{
+        padding-left: 19px;
+    }
+}
+@media screen and (max-width: 767px){
+    .filter-checkbox{
+        position: absolute;
+        top: 118px;
+        left: calc(50% - 148px/2);
+        grid-column-gap: 13px;
+        padding-left: 0;
+    }
+}

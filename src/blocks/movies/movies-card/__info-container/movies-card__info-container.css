@@ -1,0 +1,15 @@
+.movies-card__info-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding-left: 22px;
+}
+
+@media screen and (max-width: 767px){
+    .movies-card__info-container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px 12px 14px 12px;
+        width: 276px;
+    }
+}
