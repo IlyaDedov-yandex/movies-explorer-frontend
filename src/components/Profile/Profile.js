@@ -60,24 +60,24 @@ class Profile extends React.Component {
     }
 
     validateForm() {
-        this.setState({ formValid: this.state.nameValid && this.state.emailValid });
+        this.setState({ formValid: this.state.nameValid && this.state.emailValid && (this.state.name !== this.props.name || this.state.email !== this.props.email) });
     }
     render() {
         return (
             <>
-                <this.props.header loggedIn={this.props.loggedIn} />
+                <this.props.header />
                 <section className="wrapper wrapper_type_medium">
                     <div className="profile">
                         <h2 className="profile__welcome-title">Привет, {this.state.name}!</h2>
                         <form className="profile__form" onSubmit={this.handleSubmit}>
                             <div className="profile__field">
                                 <label htmlFor="name" className="profile__label">Имя</label>
-                                <input required className={`profile__input ${!this.state.nameValid && 'profile__input_type_error'}`} name="name" placeholder="Имя" type="text" onChange={this.handleChange} value={this.state.name} />
+                                <input required className={`profile__input ${!this.state.nameValid && 'profile__input_type_error'}`} name="name" placeholder="Имя" type="text" onChange={this.handleChange} value={this.state.name} disabled={this.props.isInputDisabled} />
                             </div>
                             <hr className="profile__line" />
                             <div className="profile__field">
                                 <label htmlFor="email" className="profile__label">E-mail</label>
-                                <input required className={`profile__input ${!this.state.emailValid && 'profile__input_type_error'}`} name="email" placeholder="E-mail" type="text" onChange={this.handleChange} value={this.state.email} />
+                                <input required className={`profile__input ${!this.state.emailValid && 'profile__input_type_error'}`} name="email" placeholder="E-mail" type="text" onChange={this.handleChange} value={this.state.email} disabled={this.props.isInputDisabled} />
                             </div>
                             <button type="submit" className={`profile__btn ${!this.state.formValid && 'profile__btn_type_disabled'}`} aria-label="Редактировать профайл" disabled={!this.state.formValid}>Редактировать</button>
                             <p className="profile__link" onClick={this.props.handleSignOut}>Выйти из аккаунта</p>

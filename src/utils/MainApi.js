@@ -6,20 +6,22 @@ export const register = (email, password, name) => {
     return fetch(`${BASE_URL}/signup`, {
         method: 'POST',
         credentials: 'include',
-        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ email, password, name })
     })
-        .then(checkResponse);
+        .then(res => {
+            if (!res.ok)
+                return Promise.reject(res.json());
+            return (res);
+        })
 };
 
 export const authorize = (email, password) => {
     return fetch(`${BASE_URL}/signin`, {
         method: 'POST',
         credentials: 'include',
-        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json'
         },

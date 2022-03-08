@@ -4,10 +4,10 @@ import './SavedMovies.css';
 import MoviesCardList from "./MoviesCardList/MoviesCardList";
 import SearchForm from "../Movies/SearchForm/SearchForm";
 
-function SavedMovies({ loggedIn, savedMovies, foundedMovies, onDeleteClick, header: Header, footer: Footer, onSearchSavedFilm, isShortSavedInitial, searchStringSavedInitial, onSearchSavedChange, onShortSavedChange }) {
+function SavedMovies({ savedMovies, foundedMovies, onDeleteClick, header: Header, footer: Footer, onSearchSavedFilm, isShortSavedInitial, searchStringSavedInitial, onSearchSavedChange, onShortSavedChange }) {
     return (
         <>
-            <Header loggedIn={loggedIn} />
+            <Header />
             <main className="movies">
                 <div className="movies__wrapper">
                     <SearchForm onSearchFilm={onSearchSavedFilm} isShortInitial={isShortSavedInitial} searchStringInitial={searchStringSavedInitial} onSearchChange={onSearchSavedChange} onShortChange={onShortSavedChange} />

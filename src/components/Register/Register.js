@@ -87,7 +87,7 @@ class Register extends React.Component {
                         </div>
                         <div className="login__field">
                             <label htmlFor="password" className="login__label">Пароль</label>
-                            <input required className={`login__input ${!this.state.passwordValid && 'login__input_type_error'}`} name="password" placeholder="Пароль" type="text" onChange={this.handleChange} value={this.state.password} />
+                            <input required className={`login__input ${!this.state.passwordValid && 'login__input_type_error'}`} name="password" placeholder="Пароль" type="password" onChange={this.handleChange} value={this.state.password} />
                             <span className="login__input-error">{this.state.formErrors.password}</span>
                         </div>
                         <span className="login__error">{this.props.registerStatus.message}</span>

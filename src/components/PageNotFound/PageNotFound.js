@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
 import './PageNotFound.css';
 
 function PageNotFound() {
+    const history = useHistory();
     return (
         <div className="wrapper wrapper_type_long">
             <h3 className="not-found__title">
@@ -12,7 +12,7 @@ function PageNotFound() {
             <p className="not-found__text">
                 Страница не найдена
             </p>
-            <Link className="not-found__btn" to="/">Назад</Link>
+            <Link className="not-found__btn" onClick={history.goBack}>Назад</Link>
         </div>
     )
 }

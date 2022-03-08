@@ -60,7 +60,7 @@ class Login extends React.Component {
     }
     render() {
         return (
-            <section className="wrapper wrapper_type_long">
+            < section className="wrapper wrapper_type_long" >
                 <div className="login">
                     <div className="login__welcome">
                         <Link to="/" className="logo" />
