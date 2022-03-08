@@ -1,0 +1,7 @@
+@import url(../../../blocks/movies/search-form/search-form.css);
+@import url(../../../blocks/movies/search-form/__form/search-form__form.css);
+@import url(../../../blocks/movies/search-form/__container/search-form__container.css);
+@import url(../../../blocks/movies/search-form/__image/search-form__image.css);
+@import url(../../../blocks/movies/search-form/__input/search-form__input.css);
+@import url(../../../blocks/movies/search-form/__btn/search-form__btn.css);
+@import url(../../../blocks/movies/search-form/__line/seacrh-form__line.css);

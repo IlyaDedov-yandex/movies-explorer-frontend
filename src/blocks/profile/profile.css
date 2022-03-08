@@ -1,0 +1,7 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    background-color: #202020;
+    align-items: center;
+}

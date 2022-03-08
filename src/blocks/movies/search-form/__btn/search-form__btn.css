@@ -1,0 +1,22 @@
+.search-form__btn{
+    padding: 8px 29px 8px 29px;
+    margin-right: 19px;
+    width: 80px;
+    height: 34px;
+    border: none;
+    background-color: #4285F4;
+    background-image: url(../../../../images/movies/search-form/_btn/search-form_btn.svg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 48px;
+}
+.search-form__btn:hover{
+    opacity: 0.85;
+}
+@media screen and (max-width: 767px){
+    .search-form__btn{
+        margin-right: 0;
+    }
+}

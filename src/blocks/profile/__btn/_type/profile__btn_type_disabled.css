@@ -1,0 +1,7 @@
+.profile__btn_type_disabled{
+    cursor:not-allowed;
+    opacity: 0.3;
+}
+.profile__btn_type_disabled:hover{
+    opacity: 0.8;
+}

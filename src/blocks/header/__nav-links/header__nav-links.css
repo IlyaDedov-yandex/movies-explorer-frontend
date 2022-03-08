@@ -1,0 +1,22 @@
+.header__nav-links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-column-gap: 16px;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+    margin-left: 28px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px){
+    .header__nav-links{
+        grid-row-gap: 28px;
+    }
+}
+@media screen and (max-width: 767px){
+    .header__nav-links{
+        grid-row-gap: 22px;
+    }
+}

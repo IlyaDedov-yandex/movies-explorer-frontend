@@ -1,0 +1,12 @@
+.about-project__progress-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    align-content: center;
+}
+@media screen and (max-width: 767px){
+    .about-project__progress-element{
+        width: 28.4%;
+    }
+}

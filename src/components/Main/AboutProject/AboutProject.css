@@ -1,0 +1,11 @@
+@import url(../../../blocks/about-project/about-project.css);
+@import url(../../../blocks/about-project/__container/about-project__container.css);
+@import url(../../../blocks/about-project/__element/about-project__element.css);
+@import url(../../../blocks/about-project/__progess-element/about-project__progress-element.css);
+@import url(../../../blocks/about-project/__progess-element/_long/about-project__progress-element_long.css);
+@import url(../../../blocks/about-project/__subtitle/about-project__subtitle.css);
+@import url(../../../blocks/about-project/__text/about-project__text.css);
+@import url(../../../blocks/about-project/__progress-block/about-project__progress-block.css);
+@import url(../../../blocks/about-project/__progress/about-project__progress.css);
+@import url(../../../blocks/about-project/__progress/_green/about-project__progress_green.css);
+@import url(../../../blocks/about-project/__progress-caption/about-project__progress-caption.css);

@@ -1,0 +1,20 @@
+.not-found__title{
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 169px;
+    color: #FFFFFF;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 767px){
+    .not-found__title{
+        font-size: 80px;
+        line-height: 97px;
+    }
+}

@@ -1,0 +1,12 @@
+.portfolio{
+    position: relative;
+    max-width: 1140px;
+    padding: 0 70px 125px 70px;
+    background-color: #202020;
+}
+
+@media screen and (max-width: 767px){
+    .portfolio{
+        padding: 0 14px 70px 14px;
+    }
+}

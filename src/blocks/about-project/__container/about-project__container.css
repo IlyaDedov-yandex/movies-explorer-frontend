@@ -1,0 +1,15 @@
+.about-project__container{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 767px){
+    .about-project__container{
+        flex-direction: column;
+        grid-template-columns: min-content;
+        grid-row-gap: 56px;
+        padding-top: 60px;
+    }
+}
